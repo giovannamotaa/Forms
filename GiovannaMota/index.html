@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Gulliver Traveller</title>
+  </head>
+  <body>
+    <!-- menu de navegação -->
+    <header class="header-top">
+      <a href=""
+        ><h1 class="logo"><img src="image-removebg-preview.png">
+        </h1></a
+      >
+
+      <!-- links da navegação -->
+      <nav class="header-nav">
+        <ul class="nav-links">
+          <li><a href="">Home</a></li>
+          <li><a href="">Artigos</a></li>
+          <li><a href="">Dicas de viagem</a></li>
+        </ul>
+        
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-container">
+      <section class="main-form">
+        <h1 class="main-title">
+          Cadastre o ponto turístico que você descobriu!
+        </h1>    
+      </section>
+
+      <section class="form-section">
+        <form class="form-nome">
+          <div>
+            <legend><i class="fa-solid fa-user"></i> Qual seu nome?*</legend>
+
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+          </div>
+          <div>
+            <legend class="email">
+              <i class="fa-solid fa-at"></i> Qual seu e-mail?*
+            </legend>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="seunome@mail.com"
+            />
+          </div>
+        </form>
+
+        <form action="" class="form-local">
+          <div>
+            <legend class="local">
+              <i class="fa-solid fa-location-dot"></i> Nome do ponto turístico?*
+            </legend>
+
+            <input
+              type="text"
+              name="endereco"
+              id="endereco"
+              placeholder="Ex: Torre Eiffel"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              name="cidade"
+              id="cidade"
+              placeholder="Cidade"
+              required
+            />
+            <input
+              type="text"
+              name="pais"
+              id="pais"
+              placeholder="País"
+              required
+            />
+          </div>
+        </form>
+
+        <form action="" class="form-data">
+          <legend class="data">
+            <i class="fa-solid fa-calendar-check"></i> Quando você foi?
+          </legend>
+
+          <input type="date" name="data" id="data" />
+        </form>
+
+        <form class="form-temp" required>
+          <legend>Qual era a estação do tempo?*</legend>
+          <input
+            type="radio"
+            id="Inverno"
+            name="estação"
+            value="Inverno"
+            checked
+          />
+          <label for="baixa">Inverno</label>
+
+          <input 
+          type="radio" 
+          id="Verão"
+           name="estação" 
+           value="Verão" 
+           />
+          <label for="alta">Verão</label>
+
+          <input 
+          type="radio" 
+          id="Primavera"
+           name="estação" 
+           value="Primavera" 
+           />
+          <label for="alta">Primavera</label>
+
+          <input 
+          type="radio" 
+          id="Outono"
+           name="estação" 
+           value="Outono" 
+           />
+          <label for="alta">Outono</label>
+        </form>
+
+    
+        <form action="">
+          <label for="funcionamento"
+            ><i class="fa-solid fa-person-walking"></i> Abre em quais dias?*</label
+          >
+          <select name="funcionamento" id="" required>
+            <option value="">Escolha uma opção</option>
+            <option value="dsemana">Durante a semana</option>
+            <option value="fsemana">Final de semana</option>
+            <option value="ambos">Ambos</option>
+
+          </select>
+        </form>
+        <form action="">
+          <legend>Entrada*</legend>
+
+          <input type="radio" name="transporte" id="sim" value="sim" />
+          <label for="sim">Paga</label
+          ><input type="radio" name="transporte" id="nao" value="nao" />
+          <label for="nao">Gratuita</label>
+        </form>
+
+        <form action="">
+          <legend>
+            <i class="fa-solid fa-images"></i> Imagens do local
+          </legend>
+          <input type="file" />
+        </form>
+      
+        <form action="">
+          <legend class="mensagem">
+            Conte-nos informações adicionais para melhorar a experiência dos viajantes:
+          </legend>
+          <textarea
+            name="texto"
+            id="texto"
+            cols="50"
+            rows="10"
+            placeholder="Ex: Por lá não é permitida a entrada de animais."
+          ></textarea>
+
+          <button type="submit" class="btn-enviar">Próximo</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p class="text-footer">Gulliver Traveller &#169;</p>
+
+  </body>
+</html>
